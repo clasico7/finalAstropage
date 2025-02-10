@@ -1,0 +1,17 @@
+---
+import Accordion from "../ui/Accordion.astro";
+import SectionTitle from "../ui/SectionTitle.astro";
+import Section from "./Section.astro";
+
+const description = ""; 
+---
+<!--poner en descriotio el texto para que aparesca despues de el parafo pregunts frecuentes-->
+<Section id="Preguntas">
+  <div class="mt-[140px]">
+    <SectionTitle
+      sectionTitle="Preguntas frecuentes"
+      description={description}
+    />
+    <Accordion />
+  </div>
+</Section>

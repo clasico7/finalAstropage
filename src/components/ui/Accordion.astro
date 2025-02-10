@@ -1,0 +1,54 @@
+---
+import AccordionItem from "./AccordionItem.astro";
+
+const content = [
+  {
+    index: 1,
+    title: "¿Qué es el servicio de novias en alquiler?",
+    description:
+      "Nuestro servicio ofrece acompañantes profesionales para eventos sociales, citas simuladas y otras ocasiones especiales. Las acompañantes son discretas, elegantes y se adaptan a tus necesidades.",
+  },
+  {
+    index: 2,
+    title: "¿Qué tipo de eventos cubren?",
+    description:
+      "Cubrimos una amplia variedad de eventos, como bodas, fiestas, cenas de negocios, viajes, eventos deportivos, reuniones familiares y más. Si tienes un evento específico en mente, contáctanos para personalizar el servicio. ",
+  },
+  {
+    index: 3,
+    title: "¿Es seguro y discreto?",
+    description:
+      "Sí, la discreción y seguridad son nuestras prioridades. Todos los datos personales y transacciones se manejan de manera confidencial, y nuestras acompañantes son profesionales que respetan tu privacidad  ",
+  },
+  {
+    index: 4,
+    title: "¿Puedo elegir a la acompañante?",
+    description:
+      "Sí, en la mayoría de los casos puedes elegir a la acompañante que mejor se adapte a tus preferencias. Contamos con perfiles detallados para que tomes una decisión informada. ",
+  },
+  {
+    index: 5,
+    title: "¿Cuánto cuesta el servicio?",
+    description:
+      "Los precios varían según el tipo de servicio, la duración y las necesidades específicas. Contáctanos para recibir una cotización personalizada. ",
+  },
+  {
+    index: 6,
+    title: "¿Ofrecen servicios adicionales?",
+    description:
+      "Sí, ofrecemos servicios personalizados según tus necesidades. Desde sesiones de fotos hasta acompañamiento para eventos específicos, contáctanos para más información.",
+  },
+];
+---
+
+{
+  content.map((item) => {
+    return (
+      <AccordionItem
+        index={item.index}
+        title={item.title}
+        description={item.description}
+      />
+    );
+  })
+}

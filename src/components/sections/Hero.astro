@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import HeroIlust from "../../assets/chiso.png";
+import Section from "./Section.astro";
+---
+
+<Section id="home">
+  <div
+    class="grid grid-cols-1 grid-template md:grid-cols-2 md:grid-rows-1 mt-[135px]"
+  >
+    <div class="flex flex-col w-full lg:w-[66.5%]">
+      <h1>PONER EL TITULO</h1>
+    </div>
+    <picture class="row-span-1 md:row-span-3">
+      <Image src={HeroIlust} alt="Hero Ilustration" loading="eager" />
+    </picture>
+    <div class="w-full lg:w-[66.5%]">
+      <p class="my-[35px]">
+        Ofrecemos un servicio profesional de acompañamiento para eventos sociales, ocasiones especiales o momentos que requieran discreción y compañía.
+
+Este servicio es exclusivamente de acompañamiento y no incluye actividades de índole sexual. El respeto, la educación y la integridad son nuestra máxima prioridad.
+
+Disponible únicamente para mayores de edad y exclusivamente en ciudad de Cochabamba-Bolivia. Garantizamos calidad, profesionalismo y experiencias inolvidables en cada servicio.
+
+
+      </p>
+      <a href="https://www.tiktok.com/@the_perfect_lover0/video/7457711501814648070?is_from_webapp=1&sender_device=pc." target="_blank" rel="noopener noreferrer"><button class="btn-primary w-full md:w-auto">Ver video</button></a>
+    </div>
+  </div>
+</Section>
+<style>
+  .grid-template {
+    grid-template-rows: auto 1fr;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import Card from "../ui/Card.astro";
+import Section from "./Section.astro";
+
+import propImg from "../../assets/pics/proposal-pic.png";
+---
+
+<Section>
+  <Card>
+    <div
+      class="flex bg-[#F3F3F3] rounded-[45px] p-[60px] relative mt-[123px] mb-[163px]"
+    >
+      <div class="w-full md:w-[40%] flex flex-col gap-[26px]">
+        <h2>CUAL SERIA LA FOMA DE PAGO</h2>
+        <p>
+          **Especificar que se realiza la forma de pago presencial etc**
+          
+        </p>
+        <a href="/perfiles">
+          <button class="btn-primary w-full md:w-auto">Perfiles</button>
+        </a>
+      </div>
+      <picture
+        class="hidden md:flex absolute right-[-10%] lg:right-0 top-[-15%] h-[450px] items-center justify-center"
+      >
+        <Image
+          src={propImg}
+          alt="This is an illustration"
+          class="hidden md:flex lg:h-full lg:w-auto"
+        />
+      </picture>
+    </div>
+  </Card>
+</Section>

@@ -1,0 +1,23 @@
+---
+import Cases from "../components/sections/Cases.astro";
+import Contact from "../components/sections/Contact.astro";
+import Hero from "../components/sections/Hero.astro";
+import Preguntas from "../components/sections/Preguntas.astro";
+import Proposal from "../components/sections/Proposal.astro";
+import Services from "../components/sections/Services.astro";
+import Sponsors from "../components/sections/Sponsors.astro";
+import Team from "../components/sections/Team.astro";
+import Servicio from "../components/sections/Servicio.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/globals.css";
+---
+           
+<MainLayout
+  title="Kreatif Software"
+  description="Kreatif ofrece servicios de diseño y desarrollo de software"
+>
+<Hero /> <!-- CAMBIAR LA PRESENTACION DEL TITULO  -->
+<Proposal/>
+<Servicio /> <!--REUTILIZAR --> <!-- PARA POSIBLES PERFILES EN OTRA PAGINA-->
+<Preguntas /> <!--CAMNIAR A PREGUNTAS FRECUENTES -->
+</MainLayout>
