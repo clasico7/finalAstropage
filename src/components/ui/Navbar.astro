@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import Whastappp from "../../assets/whatsappp (1).png";
 
 const navLinks = [
   {
@@ -65,11 +66,8 @@ import brand from "../../assets/logo.jpeg";
 
           <a href="https://wa.me/+59169411529?text=Hola,%20estoy%20interesado%20en%20el%20servicio." target="_blank" rel="noopener noreferrer" class="flex xl:flex-row xl:items-center px-0 xl:gap-4 flex-col">
             <button class="btn-secondary">
-              <img 
-              src="../../assets/whatsappp (1).png"
-              alt="WhatsApp" 
-              style="width: 1.5em; height: auto; display:inline; "
-              >
+            <Image src={Whastappp} alt="WhatsApp" style="width: 1.5em; height: auto; display:inline; "  />
+
               Contactar
             </button>
           
